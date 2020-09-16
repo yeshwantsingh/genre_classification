@@ -3,7 +3,7 @@ import hdfdict
 import numpy as np
 
 def load_data(feature=None, dataset=None):
-    features_dir = '/home/anupambiswas/Yeshwant/genre_classification/features'
+    features_dir = '../../../../../features'
     feature_path = os.path.join(features_dir, feature, dataset)
     hdf5_files = os.listdir(feature_path)
     feature = 'chroma' if feature == 'chromagram' else feature
